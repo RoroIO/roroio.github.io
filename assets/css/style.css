@@ -1,0 +1,81 @@
+@font-face{
+    src: url(../fonts/GothamHTF-Bold.otf);
+    font-family: Gotham-HTF;
+  }
+  @font-face{
+    src: url(../fonts/GothamHTF-Light.otf);
+    font-family: Gotham-light;
+  }
+  @font-face{
+    src: url(../fonts/GothamHTF-Medium.otf);
+    font-family: Gotham-medium;
+  }
+  :root {
+    --textColor: #ffff;
+    --backgroundColor: #000000;
+    --fontColor:#ffffffb5;
+    --secondColor:#61D836;
+    --fontStyle1: Gotham-HTF;
+    --fontStyle2: Gotham-light;
+    --fontStyle3: Gotham-medium;
+    --fontHead: 65px;
+    --fontSize1:40px;
+    --fontSize2:24px;
+    --fontBold:700;
+    --fontMedium:400;
+    --fontNormal:300;
+  }
+  body{
+    background: var( --backgroundColor);
+    color: var( --textColor);
+  }
+  a{
+      text-decoration: none;
+      color: var( --textColor);
+  }
+  p{
+      font-family: var( --fontStyle2);
+      font-weight: var( --fontNormal);
+      color: var( --fontColor);
+      margin-bottom: 0px;
+  }
+  .roro-logo{
+      width: 141px;
+      height: 30px;
+  }
+  .nav-link{
+    color: var( --fontColor)!important;
+    padding: 1rem 0rem 1rem 4rem;
+    font-size: 14px;
+    font-family: var( --fontStyle3);
+  }
+  /*-- ====== Main Section ====== --*/
+
+  .r-right-img{
+      text-align: end;
+  }
+  .r-banner-text{
+    padding: 9rem 0 0;
+  }
+  .r-banner-text h1{
+      font-size: var( --fontHead);
+      font-family: var( --fontStyle1);
+  }
+  .r-banner-text span{
+      color: var( --secondColor);
+      width: 5px;
+      height: 5px;
+  }
+  .r-banner-text p{
+      font-size: var( --fontSize2);
+      font-weight: var( --fontNormal);
+      padding: 0px 75px 0px 0px;    
+  }
+  .down-arow{
+      position: absolute;
+      left: 8%;
+      bottom: 50px;
+  }
+  .down-arow img{
+     cursor: pointer;
+  }
