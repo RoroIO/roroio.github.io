@@ -119,3 +119,8 @@
       font-weight: 500;
       padding: 10px 0px;
   }
+  .r-serving-img{
+    text-align: center;
+    position: relative;
+    top: 100px;
+  }
