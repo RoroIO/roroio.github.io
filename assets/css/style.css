@@ -11,7 +11,7 @@
     font-family: Gotham-medium;
   }
   :root {
-    --textColor: #ffff;
+    --textColor: #FFFFFF;
     --backgroundColor: #000000;
     --fontColor:#ffffffb5;
     --secondColor:#61D836;
@@ -19,7 +19,7 @@
     --fontStyle2: Gotham-light;
     --fontStyle3: Gotham-medium;
     --fontHead: 65px;
-    --fontSize1:40px;
+    --fontSize1:30px;
     --fontSize2:24px;
     --fontBold:700;
     --fontMedium:400;
@@ -33,11 +33,23 @@
       text-decoration: none;
       color: var( --textColor);
   }
+  a:hover{
+    text-decoration: none;
+    color: var( --textColor);
+}
   p{
       font-family: var( --fontStyle2);
       font-weight: var( --fontNormal);
       color: var( --fontColor);
       margin-bottom: 0px;
+  }
+  .roro-header{
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+      background: #000000;
+      height: 80px;
+      top: 0;
   }
   .roro-logo{
       width: 141px;
@@ -50,7 +62,10 @@
     font-family: var( --fontStyle3);
   }
   /*-- ====== Main Section ====== --*/
-
+  .banner{
+      margin-top: 85px;
+      position: relative;
+  }
   .r-right-img{
       text-align: end;
   }
@@ -63,8 +78,6 @@
   }
   .r-banner-text span{
       color: var( --secondColor);
-      width: 5px;
-      height: 5px;
   }
   .r-banner-text p{
       font-size: var( --fontSize2);
@@ -73,9 +86,36 @@
   }
   .down-arow{
       position: absolute;
-      left: 8%;
+      left: 140px;
       bottom: 50px;
   }
   .down-arow img{
      cursor: pointer;
+  }
+
+  .roro-serving{
+      padding: 40px 0px;
+  }
+  .roro-serving-head h4{
+      font-family: var( --fontStyle2);
+      font-size: var( --fontSize2);
+      font-weight: var( --fontMedium);
+      color: var( --fontColor);
+  }
+  .underline{
+      width: 100px;
+  }
+  .roro-serving-head span{
+    color: var( --secondColor);
+    font-size: var( --fontSize2);
+  }
+  .r-brand-services ul{
+      list-style: none;
+      padding-left: 0rem;
+  }
+  .r-brand-services li{
+      font-family: var( --fontStyle3);
+      font-size: var( --fontSize1);
+      font-weight: 500;
+      padding: 10px 0px;
   }
