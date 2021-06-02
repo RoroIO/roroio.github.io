@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+	<title>linkedin-24</title>
+	<defs>
+		<image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAANVQTFRF/////////////////v7+AAAA/v7+/////////////////v7+/////v7+/////v7+/////////////v7+/v7+/v7+/v7+/////////////////////v7+/////////////v7+/v7+/////////////////v7+/////////////////////////////////////v7+/////////////////v7+/v7+/v7+/v7+/v7+/////////////////v7+/v7+/////////v7+/v7+////////////6ECdtgAAAEd0Uk5TCH7i3n4AePz/fNb/2NZ63NoUCgg6bnZWIAJg5ORyWDLI8IxqXp7upgT6SqQkDETICuwe7vBsFOjyaBDm8mZkDmIOXGZ4WlRKVq9/AAAA70lEQVR4nHWPi1LCMBBF08qSYLBoRVESq0gVFFC0yKtR8fn/n8RuKTNkEu5kJts9s6cbxoLwoMLACatyIXjNAw6FkKLuBVKKo32qyANY1DiOfD93W9uJE0yMBd2nEDfPzlsXl/jdVkqrK4CWVlon1zccl+zcxsC6tFUAkEos7u7lJr0+AgwBurko8/C4AZViQuycga3ig+HoKaROw1Y9j3HRhIQvBOQWyIBe8JphZ2Kr3ghMZ9iZ26oFgWWOlbFV7yWQBdhRfRD4zF3VisCXR9UmMFKuKi2AdlXf5QSpfoyZm1+AP2Mm2T+Bcd10snANx88f+9DxUW0AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>

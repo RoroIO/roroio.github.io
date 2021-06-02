@@ -19,7 +19,7 @@
     --fontStyle2: Gotham-light;
     --fontStyle3: Gotham-medium;
     --fontHead: 80px;
-    --fontSize1:30px;
+    --fontSize1:40px;
     --fontSize2:24px;
     --fontBold:700;
     --fontMedium:400;
@@ -105,6 +105,7 @@
 
   .roro-serving{
       padding: 40px 0px;
+      position: relative;
   }
   .roro-serving-head h4{
       font-family: var( --fontStyle2);
@@ -142,14 +143,104 @@
 .r-recent-box p{
   font-family: var( --fontStyle3);
   font-size: var( --fontSize1);
-  line-height: 50px;
+  padding-right: 70px;
+  line-height: 60px;
   font-weight: 500;
   color: #fff;
 }
-
+.r-recent-box a{
+  text-decoration: underline;
+  color: var( --fontColor);
+}
+.r-progolf-img{
+  position: relative;
+  text-align: center;
+}
+.pro-golf{
+  position: absolute;
+  left: 6rem;
+  top: 1rem;
+}
+.pro-golf-1{
+  position: relative;
+  top: 9rem;
+  left: -4rem;
+}
+.r-airborn-img{
+  position: absolute; 
+  right: 0;
+}
+.r-airburn-full{
+  display: none;
+  position: absolute;
+}
+.grinbid-logo{
+  width: 80px;
+}
+.mb-6{
+  height: 5rem;
+}
+.team-member img{
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out; 
+}
+.team-member img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+.r-member-name p{
+  font-family: var( --fontStyle3);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  width: 60%;
+}
+.r-member-name span{
+    width: 17px;
+    float: right;
+    margin-top: -4px;
+}
+.member-desig{
+  font-family: var( --fontStyle3);
+  font-weight: 500;
+  font-size: 14px;
+}
+.team-row{
+  margin-bottom: 6rem;
+}
   /*-- ==== Set screen of above 1200px ==== --*/
+  @media screen and (min-width: 1846px){
+    .r-airburn-full{
+      display: block;
+    }
+    .r-airborn-img{
+     display: none;
+    }
+  }
+  @media screen and (max-width: 1390px){
+    .pro-golf{
+      left: 4rem;
+    }
+  }
+  @media screen and (max-width: 1185px){
+    .pro-golf{
+      left: 1rem;
+      top: 7rem;
+    }
+    .pro-golf-1{  
+      top: 15rem;
+    }
+  }
   @media screen and (min-width: 1178px) {
     .banner{
       height: 100vh;
     }
   }
+  @media screen and (max-width: 746px){
+    .r-py{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
