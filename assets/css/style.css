@@ -18,7 +18,7 @@
     --fontStyle1: Gotham-HTF;
     --fontStyle2: Gotham-light;
     --fontStyle3: Gotham-medium;
-    --fontHead: 65px;
+    --fontHead: 80px;
     --fontSize1:30px;
     --fontSize2:24px;
     --fontBold:700;
@@ -42,6 +42,10 @@
       font-weight: var( --fontNormal);
       color: var( --fontColor);
       margin-bottom: 0px;
+  }
+  .r-py{
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .roro-header{
       position: fixed;
@@ -67,10 +71,16 @@
       position: relative;
   }
   .r-right-img{
-      text-align: end;
+    position: relative;
+    left: -70px;
+  }
+  .r-banner{
+    position: relative;
+    top: -35px;
   }
   .r-banner-text{
     padding: 9rem 0 0;
+    position: relative;
   }
   .r-banner-text h1{
       font-size: var( --fontHead);
@@ -86,8 +96,8 @@
   }
   .down-arow{
       position: absolute;
-      left: 140px;
-      bottom: 50px;
+      left: 15px;
+      bottom: -33%;
   }
   .down-arow img{
      cursor: pointer;
@@ -123,4 +133,23 @@
     text-align: center;
     position: relative;
     top: 100px;
+  }
+  .r-s-img{
+    position: absolute;
+    left: 0;
+    top: -3rem;
+  }
+.r-recent-box p{
+  font-family: var( --fontStyle3);
+  font-size: var( --fontSize1);
+  line-height: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+
+  /*-- ==== Set screen of above 1200px ==== --*/
+  @media screen and (min-width: 1178px) {
+    .banner{
+      height: 100vh;
+    }
   }
