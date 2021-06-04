@@ -108,10 +108,14 @@
       font-size: var( --fontSize2);
       font-weight: var( --fontMedium);
       color: var( --fontColor);
+      margin-bottom: 20px;
+  }
+  .r-p-head{
+    margin-top: 18px;
   }
   .underline{
       width: 75px;
-      margin-bottom: 58px;
+      margin-bottom: 52px;
   }
   .r-dot{
     background-color: var( --secondColor);
@@ -129,7 +133,7 @@
       font-family: var( --fontStyle3);
       font-size: var( --fontSize1);
       font-weight: 500;
-      padding: 20px 0px;
+      margin-bottom: 24px;
   }
   .r-serving-img{
     text-align: center;
@@ -143,6 +147,11 @@
   }
   .r-process{
     margin-top: 30px;
+  }
+  .r-process img{
+    position: relative;
+    top: 4px;
+    right: 2px;
   }
 .r-recent-box p{
   font-family: var( --fontStyle3);
