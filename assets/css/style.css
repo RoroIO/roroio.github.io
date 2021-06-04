@@ -49,8 +49,8 @@
   }
   .roro-header{
       height: 77px;
-      z-index: 9999;
-      background: #000000;
+      /* z-index: 9999;
+      background: #000000; */
   }
   .roro-logo{
       width: 141px;
@@ -65,6 +65,7 @@
   /*-- ====== Main Section ====== --*/
   .banner{
       position: relative;
+      /* height: 100vw; */
   }
   .r-right-img{
     position: relative;
@@ -92,8 +93,8 @@
   }
   .down-arow{
       position: absolute;
-      left: 15px;
-      bottom: -33%;
+      left: 120px;
+      bottom: 54px;
   }
   .down-arow img{
      cursor: pointer;
@@ -257,8 +258,10 @@
     }
   }
   @media screen and (min-width: 1178px) {
-    .banner{
-      height: 100vh;
+    .landing-page{
+      min-height: 100vh;
+      position: relative;
+      /* background-color: red; */
     }
   }
   @media screen and (max-width: 746px){
