@@ -93,7 +93,7 @@
   }
   .down-arow{
       position: absolute;
-      left: 120px;
+      left: 10vw;
       bottom: 54px;
   }
   .down-arow img{
@@ -234,7 +234,7 @@
      display: none;
     }
   }
-  @media screen and (min-width:1600px) {
+  @media screen and (min-width:1580px) {
     .r-banner-text{
       padding: 256px 0 0;
     }
@@ -242,6 +242,9 @@
       position: relative;
       top: 50px;
   } 
+  .down-arow{
+    left: 13vw;
+}
   }
   @media screen and (max-width: 1390px){
     .pro-golf{
