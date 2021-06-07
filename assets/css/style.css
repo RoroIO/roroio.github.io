@@ -75,9 +75,28 @@
     position: relative;
     top: -28px;
   }
-  .r-banner-text{
-    padding: 9rem 0 0;
+  /* .r-banner-text{
+    padding: 21vh 0 0;
     position: relative;
+    min-height: 80vh;
+  } */
+  .r-banner-text{
+    position:relative;
+    height: 90vh;
+    margin: auto;
+  }
+  .inner{
+    position:absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin: auto;
+    height: 50vh;
+  }
+  .b-right{
+    height: 80vh;
+    margin: 0 auto;
   }
   .r-banner-text h1{
       font-size: var( --fontHead);
@@ -143,8 +162,9 @@
   }
   .r-s-img{
     position: absolute;
-    left: 0;
-    top: 3rem;
+    left: -4px;
+    top: -6rem;
+    width: 92%;
   }
   .r-process{
     margin-top: 30px;
@@ -168,6 +188,10 @@
   text-decoration: underline;
   color: var( --fontColor);
 }
+.roro-recent-work{
+  padding: 138px 0px;
+  position: relative;
+}
 .r-progolf-img{
   position: relative;
   text-align: center;
@@ -175,12 +199,16 @@
 .pro-golf{
   position: absolute;
   left: 6rem;
-  top: 1rem;
+  top: 3rem;
 }
 .pro-golf-1{
   position: relative;
-  top: 9rem;
-  left: -4rem;
+  top: 11rem;
+  left: -3rem;
+}
+.roro-airborn{
+  padding: 78px 0px;
+  position: relative;
 }
 .r-airborn-img{
   position: absolute; 
@@ -190,9 +218,55 @@
   display: none;
   position: absolute;
 }
-/* .grinbid-logo{
-  width: 80px;
-} */
+.r-recent-box a{
+  font-size: 20px;
+  margin-left: 2px;
+}
+.roro-grinbid{
+  padding: 128px 0px;
+  position: relative;
+}
+.grinbid-logo{
+  width: 64px;
+}
+.r-d-link{
+  font-style: italic;
+}
+.roro-bradcrumbs{
+  padding: 122px 0px;
+  position: relative;
+}
+.r-airborn-img img{
+  position: relative;
+  top: -55px
+}
+.airborn-img{
+  top: 8px!important;
+}
+.roro-yura{
+  padding: 97px 0px;
+  position: relative;
+}
+.yura-img{
+  top: 16px!important;
+}
+.roro-spyder{
+  padding: 159px 0px 0px;
+  position: relative;
+}
+.pro-spyder-1{
+  position: relative;
+    top: 8rem;
+    left: -5rem;
+}
+.pro-spyder{
+  position: absolute;
+  left: 7rem;
+  top: 0rem;
+}
+.r-mb-6{
+  margin-bottom: 5rem;
+}
 .mb-6{
   height: 5rem;
 }
@@ -225,6 +299,14 @@
 .team-row{
   margin-bottom: 6rem;
 }
+/*-- === Space === --*/
+.r-mb-3{
+  margin-bottom: 20px;
+}
+
+.r-mb-7{
+  margin-bottom: 52px;
+}
   /*-- ==== Set screen of above 1200px ==== --*/
   @media screen and (min-width: 1846px){
     .r-airburn-full{
@@ -235,9 +317,9 @@
     }
   }
   @media screen and (min-width:1580px) {
-    .r-banner-text{
+    /* .r-banner-text{
       padding: 256px 0 0;
-    }
+    } */
     .r-banner {
       position: relative;
       top: 50px;
