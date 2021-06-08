@@ -29,6 +29,10 @@
     background: var( --backgroundColor);
     color: var( --textColor);
   }
+  .roro-container{
+    width: 1200px;
+    margin: 0 auto;
+  }
   a{
       text-decoration: none;
       color: var( --textColor);
@@ -43,10 +47,7 @@
       color: var( --fontColor);
       margin-bottom: 0px;
   }
-  .r-py{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+ 
   .roro-header{
       height: 77px;
       /* z-index: 9999;
@@ -63,39 +64,34 @@
     font-family: var( --fontStyle3);
   }
   /*-- ====== Main Section ====== --*/
-  .banner{
-      position: relative;
-      /* height: 100vw; */
-  }
+ .landing-page{
+   height: 100vh;
+   width: 1200px;
+   margin: 0 auto;
+ }
   .r-right-img{
     position: relative;
-    left: -70px;
+    left: -38px;
   }
-  .r-banner{
-    position: relative;
-    top: -28px;
-  }
-  /* .r-banner-text{
-    padding: 21vh 0 0;
-    position: relative;
-    min-height: 80vh;
-  } */
-  .r-banner-text{
-    position:relative;
-    height: 90vh;
-    margin: auto;
-  }
+ 
+  
   .inner{
-    position:absolute;
-    top: 0;
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-    margin: auto;
-    height: 50vh;
+    height: 80vh;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin: 0 auto;
+    width: 700px;
+  }
+  .r-banner-text{
+    height:auto;
+    width:auto;
   }
   .b-right{
     height: 80vh;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
     margin: 0 auto;
   }
   .r-banner-text h1{
@@ -111,9 +107,8 @@
       padding: 0px 75px 0px 0px;    
   }
   .down-arow{
-      position: absolute;
-      left: 10vw;
-      bottom: 54px;
+      position: relative;
+      left: 25px;
   }
   .down-arow img{
      cursor: pointer;
@@ -122,6 +117,9 @@
   .roro-serving{
       padding: 90px 0px;
       position: relative;
+  }
+  .roro-serving-head{
+    margin-bottom: 14px;
   }
   .roro-serving-head h4{
       font-family: var( --fontStyle2);
@@ -268,7 +266,14 @@
   margin-bottom: 5rem;
 }
 .mb-6{
-  height: 5rem;
+  height: 8rem;
+}
+.roro-team-box{
+  padding: 80px 0px;
+}
+.team-member{
+  margin-bottom: 1rem!important;
+  
 }
 .team-member img{
   filter: gray;
@@ -279,25 +284,68 @@
   filter: none;
   -webkit-filter: grayscale(0);
 }
+.r-member-name {
+  display: flex;
+  flex-direction: row;
+}
 .r-member-name p{
   font-family: var( --fontStyle3);
   font-weight: 500;
   font-size: 20px;
   color: #fff;
-  width: 60%;
+  margin-left: 11px;
+  position: relative;
+  width: 180px;
 }
 .r-member-name span{
     width: 17px;
+    position: relative;
+    top: -4px;
     float: right;
-    margin-top: -4px;
 }
 .member-desig{
   font-family: var( --fontStyle3);
   font-weight: 500;
   font-size: 14px;
+  margin-left: 11px;
 }
 .team-row{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  flex-flow: wrap;
   margin-bottom: 6rem;
+  padding-left: 10px;
+}
+
+.t-s{
+  margin: unset!important;
+  margin-bottom: 1rem!important;
+}
+.tech-tool{
+  padding: 67px 0px;
+  position: relative;
+}
+.team-member{
+  width: 200px;
+  margin: 0px 128px 0px 0px;
+}
+.tool-s{
+  margin: unset!important;
+  margin-top: -10px!important;
+}
+.tools-box{
+  width: 45px;
+  margin: -12px 145px 0px 0px;
+}
+.tools-box img{
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out; 
+}
+.tools-box img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 /*-- === Space === --*/
 .r-mb-3{
@@ -315,6 +363,9 @@
     .r-airborn-img{
      display: none;
     }
+    .inner{
+     height: 90vh;
+      }
   }
   @media screen and (min-width:1580px) {
     /* .r-banner-text{
@@ -324,9 +375,6 @@
       position: relative;
       top: 50px;
   } 
-  .down-arow{
-    left: 13vw;
-}
   }
   @media screen and (max-width: 1390px){
     .pro-golf{
@@ -343,16 +391,7 @@
     }
   }
   @media screen and (min-width: 1178px) {
-    .landing-page{
-      min-height: 100vh;
-      position: relative;
-      /* background-color: red; */
-    }
+   
   }
-  @media screen and (max-width: 746px){
-    .r-py{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-  }
+ 
   
