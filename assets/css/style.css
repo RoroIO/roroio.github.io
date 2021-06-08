@@ -347,6 +347,217 @@
   filter: none;
   -webkit-filter: grayscale(0);
 }
+.getintouch-box{
+  padding: 14px 0px;
+}
+.g-bt{
+  margin-bottom: 30px;
+}
+/*-- ==== Form ==== --*/
+.get-touch-form .user-box {
+  position: relative;
+}
+.user-box {
+  margin-bottom: 24px;
+}
+.get-touch-form .user-box input {
+  width: 520px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.get-touch-form .user-box textarea {
+  width: 520px;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+textarea {
+  overflow-y: scroll;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.get-touch-form .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  font-size: 20px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+.get-touch-form .user-box input:focus ~ label,
+.get-touch-form .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+.form-bottom{
+  margin-bottom: 115px;
+}
+.get-touch-form .success-message {
+  display: none;
+  float: left;
+  padding: 12px 0;
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+.get-touch-form form button {
+  position: relative;
+  float: right;
+  width: 245px;
+  height: 48px;
+  margin-top: 1%;
+  font-size: 20px;
+  font-weight: normal;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  opacity: .8;
+  color: #fff;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid #171717;
+  background-color: #171717;
+}
+.get-touch-form form button .showbox {
+  float: right;
+  width: 178px;
+  height: 44px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.circular {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transform-origin: center center;
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+.path {
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke: #000;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+}
+
+.showbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  float: right;
+  width: 60px;
+  width: 178px;
+  height: 60px;
+  height: 44px;
+  background: #f8f8f8;
+}
+.map {
+  width: 416px;
+  text-align: end;
+  float: right;
+  position: relative;
+  top: -67px;
+  left: -21px;
+}
+.map-box {
+  position: relative;	
+	margin:  0 auto;
+}
+.map-box img {
+  position: absolute;
+  top:0;
+  left:0;
+	overflow: hidden;
+	width: 416px;
+	height: 416px;
+}
+.map-box .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.map-box:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+.map-pin img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.f-space{
+  margin-bottom: 159px;
+}
+footer {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  height: 74px;
+  padding: 12px 45px;
+  background-color: #000;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  flex-wrap: wrap;
+}
+.copyrights {
+  font-size: 12px;
+  font-weight: 300;
+  color: #B3B3B3;
+  flex: 1;
+  margin-left: 103px;
+}
+.icon-ract {
+  flex: 1;
+}
+.icon-ract .ract {
+  width: 26px;
+  height: 26px;
+  margin-bottom: -1px;
+  margin-left: -12px;
+}
+footer .icon-ract .ract .ract_white {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
+  margin-right: 1px;
+}
 /*-- === Space === --*/
 .r-mb-3{
   margin-bottom: 20px;
