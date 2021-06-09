@@ -10,6 +10,14 @@
     src: url(../fonts/GothamHTF-Medium.otf);
     font-family: Gotham-medium;
   }
+  @font-face{
+    src: url(../fonts/GothamHTF-LightItalic.otf);
+    font-family: Gotham-lightitalic;
+  }
+  @font-face{
+    src: url(../fonts/GothamHTF-Book.otf);
+    font-family: Gotham-Normal;
+  }
   :root {
     --textColor: #FFFFFF;
     --backgroundColor: #000000;
@@ -18,6 +26,8 @@
     --fontStyle1: Gotham-HTF;
     --fontStyle2: Gotham-light;
     --fontStyle3: Gotham-medium;
+    --fontStyle4: Gotham-lightitalic;
+    --fontStyle5: Gotham-Normal;
     --fontHead: 80px;
     --fontSize1:40px;
     --fontSize2:24px;
@@ -61,7 +71,8 @@
     color: var( --fontColor)!important;
     padding: 1rem 0rem 1rem 4rem;
     font-size: 14px;
-    font-family: var( --fontStyle3);
+    font-family: var( --fontStyle5);
+    font-weight: 400;
   }
   /*-- ====== Main Section ====== --*/
  .landing-page{
@@ -107,8 +118,9 @@
       padding: 0px 75px 0px 0px;    
   }
   .down-arow{
-      position: relative;
-      left: 25px;
+    position: absolute;
+    bottom: 54px;
+    margin-left: 15px;
   }
   .down-arow img{
      cursor: pointer;
@@ -118,11 +130,9 @@
       padding: 90px 0px;
       position: relative;
   }
-  .roro-serving-head{
-    margin-bottom: 14px;
-  }
+  
   .roro-serving-head h4{
-      font-family: var( --fontStyle2);
+      font-family: var( --fontStyle5);
       font-size: var( --fontSize2);
       font-weight: var( --fontMedium);
       color: var( --fontColor);
@@ -160,8 +170,8 @@
   }
   .r-s-img{
     position: absolute;
-    left: -4px;
-    top: -6rem;
+    left: 48px;
+    top: -3rem;
     width: 92%;
   }
   .r-process{
@@ -187,17 +197,18 @@
   color: var( --fontColor);
 }
 .roro-recent-work{
-  padding: 138px 0px;
+  padding: 142px 0px;
   position: relative;
 }
 .r-progolf-img{
   position: relative;
-  text-align: center;
+  left: 20px;
+  top: -19px;
 }
 .pro-golf{
   position: absolute;
-  left: 6rem;
-  top: 3rem;
+  left: 4.5rem;
+  top: 2rem;
 }
 .pro-golf-1{
   position: relative;
@@ -211,17 +222,27 @@
 .r-airborn-img{
   position: absolute; 
   right: 0;
+  width: 1007px;
+  height: 580px;
 }
 .r-airburn-full{
   display: none;
   position: absolute;
 }
+.side-spc{
+  height: 77px;
+}
+.air-spc{
+  height: 20px;
+}
 .r-recent-box a{
-  font-size: 20px;
-  margin-left: 2px;
+  font-size: 18px;
+    margin-left: 2px;
+    font-family: var( --fontStyle2);
+    font-weight: 300;
 }
 .roro-grinbid{
-  padding: 128px 0px;
+  padding: 128px 0px 0px;
   position: relative;
 }
 .grinbid-logo{
@@ -231,36 +252,37 @@
   font-style: italic;
 }
 .roro-bradcrumbs{
-  padding: 122px 0px;
+  padding: 172px 0px 0px;
   position: relative;
 }
 .r-airborn-img img{
   position: relative;
-  top: -55px
+  top: -55px;
+  float:right
 }
 .airborn-img{
   top: 8px!important;
 }
 .roro-yura{
-  padding: 97px 0px;
+  padding: 226px 0px 0px;
   position: relative;
 }
 .yura-img{
   top: 16px!important;
 }
 .roro-spyder{
-  padding: 159px 0px 0px;
+  padding: 254px 0px 0px;
   position: relative;
 }
 .pro-spyder-1{
   position: relative;
     top: 8rem;
-    left: -5rem;
+    left: -3rem;
 }
 .pro-spyder{
   position: absolute;
-  left: 7rem;
-  top: 0rem;
+  left: 4rem;
+  top: -0.8rem;
 }
 .r-mb-6{
   margin-bottom: 5rem;
@@ -269,7 +291,7 @@
   height: 8rem;
 }
 .roro-team-box{
-  padding: 80px 0px;
+  padding: 87px 0px;
 }
 .team-member{
   margin-bottom: 1rem!important;
@@ -295,7 +317,7 @@
   color: #fff;
   margin-left: 11px;
   position: relative;
-  width: 180px;
+  width: 170px;
 }
 .r-member-name span{
     width: 17px;
@@ -304,8 +326,8 @@
     float: right;
 }
 .member-desig{
-  font-family: var( --fontStyle3);
-  font-weight: 500;
+  font-family: var( --fontStyle5);
+  font-weight: 400;
   font-size: 14px;
   margin-left: 11px;
 }
@@ -323,7 +345,7 @@
   margin-bottom: 1rem!important;
 }
 .tech-tool{
-  padding: 67px 0px;
+  padding: 62px 0px;
   position: relative;
 }
 .team-member{
@@ -334,11 +356,21 @@
   margin: unset!important;
   margin-top: -10px!important;
 }
+.tool-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-bottom: 6rem;
+  width: 1300px;
+}
 .tools-box{
-  width: 45px;
-  margin: -12px 145px 0px 0px;
+  width: 175.7px;
+  /* margin: -12px 145px 0px 0px; */
 }
 .tools-box img{
+  width: 52px;
+  height: 52px;
   filter: gray;
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out; 
@@ -348,19 +380,43 @@
   -webkit-filter: grayscale(0);
 }
 .getintouch-box{
-  padding: 14px 0px;
+  margin-top: -21px;
 }
 .g-bt{
-  margin-bottom: 30px;
+  margin-bottom: 43px;
+}
+a.disable-link{
+  font-family: var( --fontStyle4)!important;
+  color: #BFC5D2!important;
+  font-size: 18px!important;
+  font-weight: 300!important;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+.figma-set, .html-img{
+  width: 40px!important;
+}
+.ios-img{
+  height: 40px!important;
+  width: 60px!important;
+}
+.node-img{
+  width: 65px!important;
+}
+.css-img{
+  width: 40px!important;
+  height: 60px!important;
+  margin-top: 10px;
 }
 /*-- ==== Form ==== --*/
-.get-touch-form .user-box {
+.get-touch-form .group {
   position: relative;
 }
-.user-box {
+.group {
   margin-bottom: 24px;
 }
-.get-touch-form .user-box input {
+.get-touch-form .group input {
   width: 520px;
   padding: 10px 0;
   font-size: 16px;
@@ -371,25 +427,26 @@
   outline: none;
   background: transparent;
 }
-.get-touch-form .user-box textarea {
+.get-touch-form .group textarea {
   width: 520px;
-  padding: 10px 0;
+  padding: 0px 0;
   font-size: 20px;
+  height: 43px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
 }
-textarea {
+/* textarea {
   overflow-y: scroll;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-}
-.get-touch-form .user-box label {
+} */
+.get-touch-form .group label {
   position: absolute;
   top:0;
   left: 0;
@@ -398,10 +455,16 @@ textarea {
   pointer-events: none;
   transition: .5s;
 }
+.group textarea:focus ~ label,
+.group textarea:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
 
-
-.get-touch-form .user-box input:focus ~ label,
-.get-touch-form .user-box input:valid ~ label {
+.get-touch-form .group input:focus ~ label,
+.get-touch-form .group input:valid ~ label {
   top: -20px;
   left: 0;
   color: #fff;
@@ -409,6 +472,29 @@ textarea {
 }
 .form-bottom{
   margin-bottom: 115px;
+}
+.error {
+  position: absolute;
+  bottom: -10px;
+  display: none;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: red;
+}
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  content: "";
+  transition: 300ms ease all;
+  background: #000;
 }
 .get-touch-form .success-message {
   display: none;
@@ -420,7 +506,7 @@ textarea {
 .get-touch-form form button {
   position: relative;
   float: right;
-  width: 245px;
+  width: 236px;
   height: 48px;
   margin-top: 1%;
   font-size: 20px;
@@ -491,30 +577,46 @@ svg:not(:root) {
   top: -67px;
   left: -21px;
 }
-.map-box {
-  position: relative;	
-	margin:  0 auto;
-}
-.map-box img {
-  position: absolute;
-  top:0;
-  left:0;
-	overflow: hidden;
-	width: 416px;
-	height: 416px;
-}
-.map-box .swap-on-hover__front-image {
-  z-index: 9999;
-  transition: opacity .5s linear;
+.box {
+  width: 416px;
+  height: 416px;
+  background: url("../img/project/map-bnw.png") no-repeat;
+  display: inline-block;
+  position: relative;
   cursor: pointer;
+  margin-top: -30px;
 }
-.map-box:hover > .swap-on-hover__front-image{
-  opacity: 0;
+.box:hover {
+  background: url("../img/project/map-color.png") no-repeat;
 }
-.map-pin img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.pin{
+position: absolute;
+left: 41%;
+top: 42%;
+width: 60px;
+height: 65px;
+}
+.pin img{
+width: 70%;
+}
+.address-box p{
+font-family: var( --fontStyle1);
+font-weight: 700;
+font-size: 16px;
+color: #fff;
+position: relative;
+left: -34px;
+margin-bottom: 12px;
+}
+.address-box p span{
+font-family: var( --fontStyle5);
+font-size: 13px;
+font-weight: 400;
+color: #B3B3B3;
+margin-left: 14px;
+}
+.address-box p a{
+color: #B3B3B3;
 }
 .f-space{
   margin-bottom: 159px;
@@ -537,36 +639,61 @@ footer {
   font-weight: 300;
   color: #B3B3B3;
   flex: 1;
-  margin-left: 103px;
+  font-family: var( --fontStyle2);
 }
 .icon-ract {
   flex: 1;
 }
 .icon-ract .ract {
-  width: 26px;
-  height: 26px;
+  width: 35px;
+  height: 35px;
   margin-bottom: -1px;
-  margin-left: -12px;
+  margin-left: -28px;
 }
 footer .icon-ract .ract .ract_white {
   float: left;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   margin-bottom: 1px;
   background-color: #fff;
 }
 footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   margin-right: 1px;
 }
-footer .icon-ract .ract .ract_white:last-child {
+.ract_white:last-child {
   -webkit-animation: flickerAnimation 1.5s infinite;
-  animation: flickerAnimation 1.5s infinite;
+  -moz-animation: flickerAnimation 1.5s infinite;
+  -o-animation: flickerAnimation 1.5s infinite;
+   animation: flickerAnimation 1.5s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }
 /*-- === Space === --*/
 .r-mb-3{
   margin-bottom: 20px;
 }
-
+.r-mb-5{
+  margin-bottom: 3.8rem;
+}
 .r-mb-7{
   margin-bottom: 52px;
 }
