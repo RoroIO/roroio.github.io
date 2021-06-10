@@ -99,7 +99,7 @@
     width:auto;
   }
   .b-right{
-    height: 80vh;
+    height: 90vh;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -359,18 +359,22 @@
 .tool-row{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: wrap;
   margin-bottom: 6rem;
-  width: 1300px;
+  width: 1240px;
+  margin-left: -15px;
 }
 .tools-box{
-  width: 175.7px;
-  /* margin: -12px 145px 0px 0px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  height: 80px;
 }
+
 .tools-box img{
-  width: 52px;
-  height: 52px;
   filter: gray;
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out; 
@@ -439,13 +443,13 @@ a.disable-link{
   outline: none;
   background: transparent;
 }
-/* textarea {
-  overflow-y: scroll;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-} */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  color: #fff!important;
+  -webkit-box-shadow: 0 0 0 30px #000 inset;
+}
 .get-touch-form .group label {
   position: absolute;
   top:0;
@@ -475,9 +479,9 @@ a.disable-link{
 }
 .error {
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   display: none;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: normal;
   color: red;
 }
@@ -506,8 +510,8 @@ a.disable-link{
 .get-touch-form form button {
   position: relative;
   float: right;
-  width: 236px;
-  height: 48px;
+  width: 235px;
+  height: 47px;
   margin-top: 1%;
   font-size: 20px;
   font-weight: normal;
@@ -524,15 +528,32 @@ a.disable-link{
   border: 1px solid #171717;
   background-color: #171717;
 }
+.showbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  float: right;
+  width: 236px;
+  height: 48px;
+  border: 1px solid #000;
+  background: #000;
+}
 .get-touch-form form button .showbox {
   float: right;
-  width: 178px;
-  height: 44px;
+  width: 235px;
+  height: 47px;
 }
 svg:not(:root) {
   overflow: hidden;
 }
-
+.loader:before {
+  display: block;
+  padding-top: 100%;
+  content: "";
+}
 .circular {
   position: absolute;
   top: 0;
@@ -549,26 +570,35 @@ svg:not(:root) {
 .path {
   -webkit-animation: dash 1.5s ease-in-out infinite;
   animation: dash 1.5s ease-in-out infinite;
-  stroke: #000;
+  stroke: #fff;
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
   stroke-linecap: round;
 }
 
-.showbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  float: right;
-  width: 60px;
-  width: 178px;
-  height: 60px;
-  height: 44px;
-  background: #f8f8f8;
+@keyframes rotate {
+  100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+ }
 }
+@keyframes dash {
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+ }
+  50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+ }
+  100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+ }
+}
+
 .map {
   width: 416px;
   text-align: end;
@@ -596,8 +626,14 @@ top: 42%;
 width: 60px;
 height: 65px;
 }
+
 .pin img{
 width: 70%;
+}
+.pin img:hover{
+  height: 60px;
+  margin-top: -10px;
+  transition: all .5s;
 }
 .address-box p{
 font-family: var( --fontStyle1);
@@ -639,10 +675,14 @@ footer {
   font-weight: 300;
   color: #B3B3B3;
   flex: 1;
+  flex-direction: row;
   font-family: var( --fontStyle2);
+  margin-bottom: 52px;
+  position: relative;
+  top: 6px;
 }
 .icon-ract {
-  flex: 1;
+  margin-bottom: 48px;
 }
 .icon-ract .ract {
   width: 35px;
