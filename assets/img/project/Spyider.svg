@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="182px" height="40px" viewBox="0 0 182 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <polygon id="path-1" points="0 0 182 0 182 40 0 40"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-364.000000, -6651.000000)">
+            <g id="Group-2" transform="translate(364.000000, 6651.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-1"></g>
+                <text id="SPYIDER" mask="url(#mask-2)" font-family="Montserrat-ExtraBold, Montserrat" font-size="39.2623454" font-weight="700" letter-spacing="0.0417" fill="#FFFFFF">
+                    <tspan x="0" y="29">S</tspan>
+                    <tspan x="25.4444375" y="29" letter-spacing="-0.4236632">P</tspan>
+                    <tspan x="53.5644994" y="29" letter-spacing="-0.09790896">Y</tspan>
+                    <tspan x="80.5576087" y="29">IDER</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

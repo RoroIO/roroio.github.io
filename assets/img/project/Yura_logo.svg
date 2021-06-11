@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="83px" viewBox="0 0 63 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Yura_logo</title>
+    <defs>
+        <polygon id="path-1" points="15.2861567 0 32.3287867 37.93648 47.7514267 0 62.9782467 0 40.4228567 55.96417 52.6114267 82.5725255 37.2125267 82.5725255 -7.77156117e-16 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-360.000000, -5726.000000)">
+            <g id="Yura_logo" transform="translate(360.000000, 5726.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-1" fill="#0034DA" mask="url(#mask-2)" points="-5.0000003 87.572525 67.9782497 87.572525 67.9782497 -4.999995 -5.0000003 -4.999995"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

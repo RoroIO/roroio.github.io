@@ -1,8 +1,22 @@
+  //Scroll
+  
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+        scrollBar: false,
+        fixedElements: '.modal',
+        responsiveSlides: false,
+        menu: '.menu',
+        verticalCentered: false,
+        lockAnchors: false,
+        slidesNavigation: false,
+        anchors: ['recentwork', 'getintouch'],
+    });
+});
+
+// Form validation
 
 $(document).ready(function() {
     
-
-    // Form validation
     var testEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     var nameValid, emailValid;
@@ -98,52 +112,42 @@ $(document).ready(function() {
 });
 
 //Address Copy
-document.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('copy', doCopy);
-    document.addEventListener('paste', doPaste);
-    document.querySelector('.addres_copy').addEventListener('click', autoCopy);
+
+const links = document.querySelectorAll('.copy-click');
+const cls = {
+  copied: 'is-copied',
+  hover: 'is-hovered' };
+
+
+const copyToClipboard = str => {
+  const el = document.createElement('input');
+  str.dataset.copyString ? el.value = str.dataset.copyString : el.value = str.text;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.opacity = 0;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+};
+
+const clickInteraction = e => {
+  e.preventDefault();
+  copyToClipboard(e.target);
+  e.target.classList.add(cls.copied);
+  setTimeout(() => e.target.classList.remove(cls.copied), 1000);
+  setTimeout(() => e.target.classList.remove(cls.hover), 700);
+};
+
+Array.from(links).forEach(link => {
+  link.addEventListener('click', e => clickInteraction(e));
+  link.addEventListener('keypress', e => {
+    if (e.keyCode === 13) clickInteraction(e);
   });
-
-  function autoCopy(ev) {
-    let addres_copy = ev.target;
-    let select = document.getSelection();
-    select.removeAllRanges();
-    let range = document.createRange();
-    range.selectNode(addres_copy.firstChild);
-    select.addRange(range);
-    document.execCommand('copy');
-  }
-
-  function doCopy(ev) {
-    let selection = document.getSelection();
-    selection = selection.toString().toCapitalizeCase();
-    console.log(selection);
-    ev.clipboardData.setData('text/plain', selection);
-    ev.preventDefault();
-  }
-
-  function doPaste(ev) {
-    let data = ev.clipboardData.getData('text/plain');
-    console.log(data);
-    let span = document.createElement('span');
-    span.textContent = data;
-    let selection = document.getSelection();
-    if (!selection.rangeCount) return false;
-    selection.deleteFromDocument();
-    selection.getRangeAt(0).insertNode(span);
-    ev.preventDefault();
-  }
-  //Scroll
-
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-        scrollBar: false,
-        fixedElements: '.modal',
-        responsiveSlides: false,
-        menu: '.menu',
-        verticalCentered: false,
-        lockAnchors: false,
-        slidesNavigation: false,
-        anchors: ['first', 'second'],
-    });
+  link.addEventListener('mouseover', e => e.target.classList.add(cls.hover));
+  link.addEventListener('mouseleave', e => {
+    if (!e.target.classList.contains(cls.copied)) {
+      e.target.classList.remove(cls.hover);
+    }
+  });
 });
