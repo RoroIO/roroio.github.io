@@ -576,6 +576,8 @@
 }
 .r-breadcrumb-img{
   position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .r-airburn-full{
   display: none;
