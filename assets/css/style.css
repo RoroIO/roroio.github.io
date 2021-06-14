@@ -38,6 +38,9 @@
   body{
     background: var( --backgroundColor);
     color: var( --textColor);
+    width:100vw;
+    margin: auto;
+    overflow-x: hidden;
   }
   .roro-container{
     width: 1200px;
@@ -73,6 +76,10 @@
     font-size: 14px;
     font-family: var( --fontStyle5);
     font-weight: 400;
+    z-index: 9999;
+  }
+  .roro-ul{
+    z-index: 9999;
   }
   /*-- ====== Main Section ====== --*/
  .landing-page{
@@ -81,8 +88,11 @@
    margin: 0 auto;
  }
   .r-right-img{
-    position: relative;
-    left: -38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 720px;
+    height: 1080px;
   }
  
   
@@ -580,8 +590,16 @@
   bottom: 0;
 }
 .r-airburn-full{
-  display: none;
   position: absolute;
+  width: 1007px;
+  height: 508px;
+  bottom: 150px;
+}
+.r-yur-full {
+  position: absolute;
+  width: 1007px;
+  height: 508px;
+  bottom: 70px;
 }
 .side-spc{
   height: 77px;
@@ -963,6 +981,10 @@ svg:not(:root) {
 .figure{
   margin-bottom: 20px;
 }
+.image-main{
+  width: 416px;
+  height: 416px;
+}
 .figure img.image-hover {
   width: 416px;
   height: 416px;
@@ -975,21 +997,21 @@ svg:not(:root) {
   opacity: 0;
   -webkit-transition: all .5s ease-in-out; 
 }
-.figure:hover img.image-hover {
+.map-box:hover img.image-hover {
   opacity: 1;
- 
 }
+
 .marker{
 position: absolute;
-top: 38%;
-left: 45%;
-height: 64px;
+top: 43%;
+left: 46%;
+height: 45px;
 z-index: 99999;
--webkit-transition: all 1s ease-in-out;
+-webkit-transition: all .5s ease-in-out;
 }
-.map:hover img.marker{
+.map-box:hover img.marker{
   transform: scale(1.3);
-  margin-top: -8px;
+  margin-top: -5px;
 }
 .address-box p{
 font-family: var( --fontStyle1);
@@ -1134,6 +1156,9 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
 .r-mb-7{
   margin-bottom: 52px;
 }
+.add-link{
+  margin-left: 70px;    
+}
   /*-- ==== Set screen of above 1200px ==== --*/
   @media screen and (min-width: 1846px){
     .r-airburn-full{
@@ -1156,6 +1181,18 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     .pro-golf{
       left: 4rem;
     }
+    .airborn-img, .yura-img, .breadcumb-img {
+      top: 8px!important;
+      position: relative;
+      left: 37px;
+  }
+  }
+  @media screen and (max-width: 1300px) {
+    .airborn-img, .yura-img, .breadcumb-img {
+      top: 8px!important;
+      position: relative;
+      left: 50px;
+  }
   }
   @media screen and (max-width: 1185px){
     .pro-golf{
@@ -1166,10 +1203,84 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
       top: 15rem;
     }
   }
-  @media screen and (min-width: 1178px) {
-   
-  }
  
+ /*-- ==== Ipad Landscap 1080px ==== --*/
+ @media screen and (max-width: 1200px){
+  .roro-container{
+    width: 1080px;
+    margin: auto;
+  }
+  .r-banner-text h1 {
+    font-size: 60px;
+  }
+  .r-banner-text p {
+    font-size: 18px;
+  }
+  .nav-link{
+    font-size: 12px;
+  }
+  .roro-serving-head h4 {
+    font-size: 22px;
+  }
+  .r-brand-services li {
+    font-size: 32px;
+  }
+  .r-recent-box p{
+    font-size: 36px;
+    width: 469px;
+    height: 368px;
+  }
+  .r-recent-box a {
+    font-size: 16px;
+  }
+  .team-member {
+    width: 162px;
+    height: 162px;
+  }
+  .r-member-name{
+    margin-bottom: 5px!important;
+  }
+  .r-member-name p{
+    font-size: 16px;
+    width: 140px;
+  }
+  .r-member-name img{
+    width: 16px;
+  }
+  .member-desig{
+    font-size: 11px;
+  }
+  .team-row {
+    justify-content: space-around;
+  }
+  .tool-row {
+    width: 1104px;
+    margin-left: -10px;
+  }
+  .image-main {
+    width: 380px;
+    height: 380px;
+  }
+  .marker {
+    top: 39%;
+    left: 50%;
+  }
+  .address-box p span {
+    font-size: 11px;
+  }
+  .add-link{
+    margin-left: 120px;
+  }
+  .get-touch-form .group label{
+    font-size: 18px;
+  }
+  .get-touch-form .group input, .get-touch-form .group textarea{
+    width: 460px;
+  }
+  .get-touch-form form button{
+    width: 225px;
+  }
+ }
  
 
   
