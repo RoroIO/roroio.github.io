@@ -838,7 +838,7 @@ input:-webkit-autofill:active  {
 
 .get-touch-form .group input:focus ~ label,
 .get-touch-form .group input:valid ~ label {
-  top: -60px;
+  top: -20px;
   left: 0;
   color: #fff;
   font-size: 12px;
@@ -1202,7 +1202,13 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
  /*-- ==== Ipad Landscap 1080px ==== --*/
  @media screen and (max-width: 1280px){
    section{
-     width: 1200px;
+     width: unset;
+   }
+   .roro-airborn, .roro-bradcrumbs, .roro-yura{
+     overflow-x: hidden;
+   }
+   .landing-page{
+     width: unset;
    }
   .roro-container{
     width: 1080px;
@@ -1315,5 +1321,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
  }
  
 
+
+ 
   
 
