@@ -1037,7 +1037,7 @@ color: #B3B3B3;
   padding-bottom: 2px;
   text-decoration: none;
   cursor: copy;
-  color: #000;
+  color: #fff;
   transition: background-color calc(var(--duration) * 2) var(--ease);
 }
 .copy-click:after {
@@ -1046,10 +1046,12 @@ color: #B3B3B3;
   bottom: calc(100% + 6px);
   left: 50%;
   padding: 8px 16px;
+  text-align: center;
+  width: 224px;
   white-space: nowrap;
-  background-color: #fff!important;
+  background-color: #212121!important;
   border-radius: 4px;
-  box-shadow: 0 0 0 -12px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 -12px rgb(0 0 0 / 0%);
   pointer-events: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1073,6 +1075,7 @@ color: #B3B3B3;
 .copy-click.is-copied:after {
   content: attr(data-tooltip-text-copied);
 }
+
 .f-space{
   margin-bottom: 159px;
 }
@@ -1194,21 +1197,19 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
       left: 50px;
   }
   }
-  @media screen and (max-width: 1185px){
-    .pro-golf{
-      left: 1rem;
-      top: 7rem;
-    }
-    .pro-golf-1{  
-      top: 15rem;
-    }
-  }
+ 
  
  /*-- ==== Ipad Landscap 1080px ==== --*/
- @media screen and (max-width: 1200px){
+ @media screen and (max-width: 1280px){
+   section{
+     width: 1200px;
+   }
   .roro-container{
     width: 1080px;
     margin: auto;
+  }
+  .inner {
+    width: 622px;
   }
   .r-banner-text h1 {
     font-size: 60px;
@@ -1225,14 +1226,47 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   .r-brand-services li {
     font-size: 32px;
   }
+  .r-progolf-img{
+    width: 400px;
+    height: 332px;
+  }
   .r-recent-box p{
     font-size: 36px;
+    line-height: 54px;
     width: 469px;
-    height: 368px;
+    height: 324px;
   }
   .r-recent-box a {
     font-size: 16px;
   }
+  .pro-golf {
+    left: 0.4rem;
+    top: 6.5rem;
+  }
+  .pro-golf-1 {
+    top: 14.3rem;
+    left: -3rem;
+  }
+  .r-airburn-full {
+    width: 750px;
+    height: 432px;
+    bottom: 80px;
+  }
+  .r-yur-full {
+    width: 750px;
+    height: 432px;
+    bottom: 0px;
+  }
+  .pro-spyder-1 {
+    position: relative;
+    top: 12rem;
+    left: -3rem;
+}
+.pro-spyder {
+    position: absolute;
+    left: 1rem;
+    top: 4.7rem;
+}
   .team-member {
     width: 162px;
     height: 162px;
@@ -1250,11 +1284,9 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   .member-desig{
     font-size: 11px;
   }
-  .team-row {
-    justify-content: space-around;
-  }
+
   .tool-row {
-    width: 1104px;
+    width: 1071px;
     margin-left: -10px;
   }
   .image-main {
@@ -1269,7 +1301,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     font-size: 11px;
   }
   .add-link{
-    margin-left: 120px;
+    margin-left: 116px;
   }
   .get-touch-form .group label{
     font-size: 18px;
