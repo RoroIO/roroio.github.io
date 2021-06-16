@@ -1201,18 +1201,27 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
  
  /*-- ==== Ipad Landscap 1080px ==== --*/
  @media screen and (max-width: 1280px){
+  body::-webkit-scrollbar {
+    display: none;
+  }
    section{
-     width: unset;
+     width: 100vw;
+     margin: 0 auto;
+     overflow-x: hidden;
    }
    .roro-airborn, .roro-bradcrumbs, .roro-yura{
-     overflow-x: hidden;
+    overflow-x: hidden;
    }
    .landing-page{
      width: unset;
    }
   .roro-container{
-    width: 1080px;
+    width: 1000px;
     margin: auto;
+  }
+  .r-right-img {
+    width: 585px;
+    height: auto;
   }
   .inner {
     width: 622px;
@@ -1298,6 +1307,11 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   .image-main {
     width: 380px;
     height: 380px;
+  }
+  .figure img.image-hover{
+    width: 380px;
+    height: 380px;
+    left: 37px;
   }
   .marker {
     top: 39%;
