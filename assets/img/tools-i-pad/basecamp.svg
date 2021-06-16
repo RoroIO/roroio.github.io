@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="59px" viewBox="0 0 60 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>basecamp</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-235.000000, -504.000000)">
+            <g id="basecamp" transform="translate(235.800000, 504.900000)">
+                <path d="M6.23790128,24.4477423 C9.8942586,14.0920026 16.8717881,2.05714286 30.9525415,2.05714286 C45.0332948,2.05714286 51.9968583,20.6273342 52.8760325,33.2219388" id="Path" stroke="#1D2D35" stroke-width="4.75875936" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Path" fill="#FFE000" fill-rule="nonzero" opacity="0.4" points="58.5 40.2751148 16.5507979 57.6 0 17.3247704 7.56364561 14.1900383 41.9492021 0"></polygon>
+                <polygon id="Path" fill="#FFE000" fill-rule="nonzero" points="56.5322753 44.8372194 12.1130287 54.0454592 3.30732058 11.3771939 10.7734328 9.82389031 47.7405332 2.16906888"></polygon>
+                <path d="M30.9525415,2.02913265 C45.0332948,2.02913265 51.9968583,20.6273342 52.8760325,33.2220536 C49.1778915,39.6594643 40.3164336,42.0803954 30.9525415,42.0803954 C23.2633637,42.2220747 15.8966555,38.9859732 10.7872844,33.2220536 C10.7872844,33.2220536 15.1971215,21.2851148 19.3139005,21.2571046 C22.3282775,21.2571046 24.8959699,26.8547832 27.3102647,26.8547832 C29.7245595,26.8547832 34.7343643,16.1072449 34.7343643,16.1072449" id="Path" stroke="#1D2D35" stroke-width="4.75875936" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
