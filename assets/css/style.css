@@ -1394,10 +1394,13 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     width: 4px;
   }
   .r-serving-img {
-    text-align: center;
     position: absolute;
     top: 160px;
-    left: 0;
+    margin-left: -6%;
+}
+  .r-brand-services ul {
+    position: relative;
+    z-index: 9999;
   }
   .r-s-img {
     position: absolute;
