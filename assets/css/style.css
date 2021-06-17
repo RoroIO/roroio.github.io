@@ -1209,13 +1209,9 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
  /*-- =========================== Ipad Landscap 1280px =========================== --*/
 
  @media screen and (max-width: 1280px){
-  body::-webkit-scrollbar {
-    display: none;
-  }
    section{
      width: 100vw;
      margin: 0 auto;
-     overflow-x: hidden;
    }
    .roro-airborn, .roro-bradcrumbs, .roro-yura{
     overflow-x: hidden;
@@ -1322,11 +1318,11 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     width: 380px;
     height: 380px;
   }
-  .figure img.image-hover{
+  .figure img.image-hover {
     width: 380px;
     height: 380px;
-    left: 37px;
-  }
+    left: 12px;
+}
   .marker {
     top: 39%;
     left: 50%;
@@ -1372,12 +1368,12 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
       width: 94px;
       height: 20px;
       }
-   .b-box{
-     background-image: url(../img/i-pad/landing.png);
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 80vh;
-   }
+  .b-box {
+    background-image: url(../img/i-pad/landing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    }
    .inner{
      margin: unset;
    }
@@ -1483,16 +1479,12 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     height: 380px;
     margin: auto;
   }
-  .image-main {
-    position: relative!important;
-    left: 25.3px!important;
-  }
   .marker {
     top: 42%;
-    left: 55%;
+    left: 47%;
   }
   .address-box p {
-    left: 5px;
+    left: -12px;
   }
   .add-link {
     margin-left: 57px;
