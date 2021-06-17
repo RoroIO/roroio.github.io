@@ -1509,5 +1509,10 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   .icon-ract .ract {
     float: right;
   }
+  .tools-box img {
+    filter: unset;
+    -webkit-filter: unset;
+    -webkit-transition: all .5s ease-in-out;
+  }
   }
  
