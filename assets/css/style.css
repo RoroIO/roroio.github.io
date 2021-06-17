@@ -1507,4 +1507,236 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     -webkit-transition: all .5s ease-in-out;
   }
   }
- 
+ .i-pad-hide{
+   display: none!important;
+ }
+ .m-hide{
+  display: block!important;
+}
+ /*-- ======================= Mobile 768px ======================== --*/
+
+ @media screen and (max-width:768px) {
+   .m-hide{
+     display: none!important;
+   }
+   .i-pad-hide{
+    display: block!important;
+  }
+  .roro-container{
+    width: 335px;
+    margin: auto;
+  }
+  .b-box {
+    background-image: url(../img/i-pad/landing-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    }
+  .inner {
+    width: 316px;
+  }
+  .r-banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 30px !important;
+  }
+  .r-banner-text p {
+    font-size: 13px;
+  }
+  .r-banner-text p {
+    padding: unset;
+  }
+  .roro-serving-head h4 {
+    font-size: 16px;
+    width: 190px;
+    margin-bottom: 12px;
+  }
+  .underline {
+    width: 75px;
+    margin-bottom: 40px;
+  }
+  .r-brand-services li {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .r-brand-services{
+    background-image: url(../img/project/serving-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .roro-serving {
+    padding: 50px 0px;
+  }
+  .roro-recent-work {
+    padding: 50px 0px 0px 0px;
+  }
+  .ppg-logo{
+    width: 68px;
+    height: 68px;
+  }
+  .r-mb-6{
+    margin-bottom: unset;
+  }
+  .mob-bottom{
+    margin-bottom: 71px;
+  }
+  .r-recent-box p {
+    width: 326px;
+    height: 240px;
+  }
+  .pp-b{
+    margin-bottom: 20px!important;
+  }
+  .r-mb-7{
+    margin-bottom: 20px!important;
+  }
+  .r-recent-box a {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  .r-progolf-img {
+    width: 217px;
+    height: 178px;
+}
+.r-progolf-img {
+    top: 0px;
+  }
+  .pro-golf {
+    left: 5.7rem;
+    top: 0.7rem;
+  }
+  .pro-golf-1 {
+    top: 2rem;
+    left: -0.5rem;
+  }
+  .roro-airborn {
+    padding: 90px 0px 0px 0px;
+  }
+  .airborn-logo{
+    width: 80px;
+    margin-bottom: 32px!important;
+  }
+  .macbook-img{
+    position: relative;
+    top: 32px;
+    left: -39px;
+  }
+  .r-airburn-full {
+    width: 415px;
+    height: 239px;
+  }
+  .roro-airborn, .roro-bradcrumbs, .roro-yura {
+    overflow-x: unset;
+  }
+
+  .roro-bradcrumbs {
+    padding: 130px 0px 0px;
+  }
+  .r-yur-full {
+    width: 415px;
+    height: 239px;
+  }
+  .breadcum-logo{
+    width: 65px;
+  }
+  .roro-yura {
+    padding: 150px 0px 0px;
+  }
+  .yura-logo{
+    width: 57px;
+  }
+  .roro-spyder {
+    padding: 160px 0px 0px;
+  }
+  .spyder-logo{
+    width: 146px;
+  }
+  .mb-6 {
+    height: 3rem;
+  }
+  .r-mb-5 {
+    margin-bottom: .6rem;
+  }
+  .team-member {
+    width: 150px;
+    height: 150px;
+  }
+  .r-member-name p {
+    font-size: 16px;
+    width: 130px;
+  }
+  .team-row {
+    width: 404px;
+    margin-left: -40px;
+    margin-bottom: 3rem;
+  }
+  .tools-box {
+    width: 45px;
+    height: 45px;
+  }
+  .tool-row {
+    width: 330px;
+    margin-bottom: 3rem;
+}
+  .tool-row {
+    margin-left: 0px;
+  }
+  .g-bt {
+    margin-bottom: 10px;
+  }
+  .get-touch-form .group input, .get-touch-form .group textarea {
+    width: 333px;
+  }
+  .get-touch-form .group label {
+    font-size: 16px;
+  }
+  .form-bottom {
+    margin-bottom: 80px;
+  }
+  .get-touch-form form button {
+    width: 340px;
+  }
+  .map {
+    width: 335px;
+    height: 335px;
+    margin: auto;
+}
+  .image-main {
+    width: 335px;
+    height: 335px;
+  }
+  .figure img.image-hover {
+    width: 335px;
+    height: 335px;
+    left: 22px;
+  }
+  .figure {
+    margin-left: 10px;
+  }
+  .marker {
+    top: 40%;
+    left: 51%;
+  }
+  .address-box p span {
+    font-size: 10px;
+  }
+  .address-box p {
+    left: 5px;
+  }
+  .add-link {
+    margin-left: 35px;
+  }
+  .f-space {
+    margin-bottom: 65px;
+  }
+  .copyrights {
+    font-size: 10px;
+    width: 220px;
+  }
+  footer .icon-ract .ract .ract_white:nth-child(2n+1) {
+    margin-right: 1.2px;
+}
+footer .icon-ract .ract .ract_white {
+    width: 11px;
+    height: 11px;
+  }
+ }
