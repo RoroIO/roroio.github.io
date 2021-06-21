@@ -35,11 +35,12 @@
     --fontMedium:400;
     --fontNormal:300;
   }
-  body{
+  body,html{
     background: var( --backgroundColor);
     color: var( --textColor);
     width:100vw;
     margin: auto;
+    overflow:visible;
     overflow-x: hidden;
   }
   .roro-container{
