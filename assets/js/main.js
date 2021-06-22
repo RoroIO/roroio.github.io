@@ -1,4 +1,240 @@
-  //Scroll
+function mobileMenu() {
+    var checkWidth = $(window).width();
+    if (checkWidth > 768) {
+        // Mobile Menu Toggle
+        $('#menu').on('click', '.mobile-menu', function() {
+            $(this).toggle();
+            $(this).parent().addClass('active-menu');
+            // $(this).siblings('nav').toggle();
+        });
+    } else if (checkWidth < 769) {
+        // Mobile Menu Toggle
+        $('#menu').on('click', '.mobile-menu', function() {
+            // $(this).toggle();
+            $(this).fadeOut().siblings('nav').show().find('ul').show().addClass('show');
+            $(this).siblings('.closeBtn').fadeIn('slow');
+        });
+        $('#menu').on('click', '.closeBtn', function() {
+            // $(this).toggle();
+            $(this).fadeOut().siblings('nav').delay(300).fadeOut().find('ul').delay(200).fadeOut().removeClass('show');
+            $(this).siblings('.mobile-menu').fadeIn('slow');
+        });
+        $('#menu nav ul li').on('click', 'a', function() {
+            console.log('ul clicked');
+            $(this).parents('ul').removeClass('show').parents('nav').hide();
+            $(this).parents('#menu').find('.mobile-menu').fadeIn('slow');
+            $(this).parents('#menu').find('.closeBtn').hide();
+        });
+    }
+}
+$(document).ready(mobileMenu);
+$(window).resize(mobileMenu);
+
+$(document).ready(function() {
+    // if( /iPhone/i.test(navigator.userAgent) ) {
+    //  // alert("iphone Rule");
+    //  $(".landscape-mode").removeClass('android').addClass("iphone");
+    // } else if( /android/i.test(navigator.userAgent) ) {
+    // 	// alert("Android Rule");
+    //  $(".landscape-mode").addClass('android').removeClass("iphone");
+    // }
+
+    var isAndroid = navigator.userAgent.toLowerCase().indexOf("android");
+    if (isAndroid > -1) {
+        //It is an Android device. Redirect to Android Version.
+        $(".landscape-mode").addClass('android').removeClass("iphone");
+    } else {
+        $(".landscape-mode").removeClass('android').addClass("iphone");
+    }
+
+
+    // var SCROLLING_SPEED = 700;
+    // Fullpage config
+    $('#fullpage').fullpage({
+        onLeave: function(index, nextIndex, direction) {
+            var checkWidth = $(window).width();
+            // nav show
+         
+          
+            // nav end
+            if ((index == 4 && direction === "down") || (index == 7 && direction === "up")) {
+                $('.vertical-tabs.menu').addClass("fixed");
+
+            }
+
+            if ((index == 7 && direction === "down") || (index == 4 && direction === "up")) {
+                $('.vertical-tabs.menu').removeClass("fixed");
+//                $('header nav ul li[data-menuanchor="planing"]').removeClass('active-state');
+            }
+
+
+            if (checkWidth > 800) {
+                if (direction === "down") {
+                    $('.vertical-tabs .vertical-tab').removeClass('up');
+                    $('.vertical-tabs .vertical-tab').addClass('down');
+                } else if (direction === "up") {
+                    $('.vertical-tabs .vertical-tab').removeClass('down');
+                    $('.vertical-tabs .vertical-tab').addClass('up');
+                }
+            }
+
+            if (checkWidth < 801) {
+                if ((index == 6 && direction === "down") || (index == 7 && direction === "up")) {
+                    $('#vTab4').addClass('mobi-hide');
+                }
+                if (index == 8 && direction === "up") {
+                    $('#vTab4').removeClass('mobi-hide');
+                    $('#menu .mobi-page-title').animate({
+                        'opacity': 0
+                    }, 200, function() {
+                        $(this).html('<span>Process</span>');
+                    }).animate({
+                        'opacity': 1
+                    }, 200);
+                }
+
+
+                if (index == 3 && direction === "down") {
+
+                    $('#menu .mobi-page-title').animate({
+                        'opacity': 0
+                    }, 200, function() {
+                        $(this).html('<span>Process</span>');
+                    }).animate({
+                        'opacity': 1
+                    }, 200);
+                }
+            }
+
+        },
+
+        afterLoad: function(anchorLink, index) {
+            var checkWidth = $(window).width();
+            var col = $('.process .vertical-tab-content .pr-tab-content .process-steps .pr-step .col');
+            var colMobi = $('.process .vertical-tab-content .pr-tab-content .process-steps .pr-step .col-mobi');
+            var colIcon = $('.process .vertical-tab-content .pr-tab-content .process-desc.mobi .wrap .pr-desc-blk');
+            if (checkWidth > 768) {
+                if (index == 1) {
+                    $('#menu').removeClass('active-menu');
+                    // $('#menu nav').hide();
+                    $('#menu .mobile-menu').fadeIn(1000);
+                } else {
+                    $('#menu').addClass('active-menu');
+                    $('#menu nav').fadeIn();
+                    $('#menu .mobile-menu').fadeOut();
+                }
+            }
+
+            // On page Load add title
+            $('#menu nav ul li').each(function() {
+                var activeTitle = $(this).find('a').text();
+                var appendTitle = "<span>" + activeTitle + "</span>";
+                var notPlaningAnchor = $('#menu nav ul li[data-menuanchor="planing"]');
+
+                if ($(this).not(notPlaningAnchor).hasClass('active')) {
+                    $('#menu .mobi-page-title').animate({
+                        'opacity': 0
+                    }, 200, function() {
+                        $(this).html(appendTitle);
+                    }).animate({
+                        'opacity': 1
+                    }, 200);
+                }
+                if ($(notPlaningAnchor).hasClass('active')) {
+                    $('#menu .mobi-page-title').html('<span>Process</span>').css({
+                        'opacity': 1
+                    });
+                }
+            });
+
+            if (index == 1) {
+                $('#menu .mobi-page-title').empty();
+                $('#menu').removeClass('menu-shadow');
+            }
+
+            if (index == 4) {
+                $('#tab1').addClass('open');
+                $('header nav ul li[data-menuanchor="planing"]').addClass('active-state');
+                $('.vertical-tabs.menu').addClass("fixed");
+                $('#menu .mobi-page-title').css({
+                    'opacity': 0
+                }, function() {
+                    $(this).html("<span>Process</span>");
+                }).css({
+                    'opacity': 1
+                });
+                col.addClass('visible');
+                colMobi.removeClass('visible');
+                colIcon.removeClass('changeImage');
+            } else if (index == 5) {
+                $('#tab2').addClass('open');
+                $('.vertical-tabs.menu').addClass("fixed");
+                $('#menu .mobi-page-title').css({
+                    'opacity': 0
+                }, function() {
+                    $(this).html("<span>Process</span>");
+                }).css({
+                    'opacity': 1
+                });
+                col.addClass('visible');
+                colMobi.removeClass('visible');
+                colIcon.removeClass('changeImage');
+            } else if (index == 6) {
+                $('#tab3').addClass('open');
+                $('.vertical-tabs.menu').addClass("fixed");
+                $('#menu .mobi-page-title').css({
+                    'opacity': 0
+                }, function() {
+                    $(this).html("<span>Process</span>");
+                }).css({
+                    'opacity': 1
+                });
+                col.addClass('visible');
+                colMobi.removeClass('visible');
+                colIcon.removeClass('changeImage');
+            } else if (index == 7) {
+                $('#tab4').addClass('open');
+                $('header nav ul li[data-menuanchor="planing"]').addClass('active-state');
+                $('.vertical-tabs.menu').addClass("fixed");
+                $('#menu .mobi-page-title').css({
+                    'opacity': 0
+                }, function() {
+                    $(this).html("<span>Process</span>");
+                }).css({
+                    'opacity': 1
+                });
+                col.addClass('visible');
+                colMobi.removeClass('visible');
+                colIcon.removeClass('changeImage');
+            } else {
+                $('.vertical-tabs.menu').removeClass("fixed");
+                $('header nav ul li[data-menuanchor="planing"]').removeClass('active-state');
+            }
+
+            // tap to expand discription process step
+            if (checkWidth < 801) {
+                $('.vertical-tab-content.open .pr-step').on('click', '.col', function() {
+                    $(this).next('.col-mobi').addClass('visible');
+                    $(this).parent().find('.col').removeClass('visible');
+
+                    var index = $(".vertical-tab-content.open .pr-step").index($(this).parent());
+                    $('.vertical-tab-content.open .process-desc.mobi .pr-desc-blk').eq(index).addClass('changeImage');
+                });
+                $('.vertical-tab-content.open .pr-step').on('click', '.col-mobi', function() {
+                    $(this).removeClass('visible');
+                    $(this).parent().find('.col').addClass('visible');
+                    var index = $(".vertical-tab-content.open .pr-step").index($(this).parent());
+                    $('.vertical-tab-content.open .process-desc.mobi .pr-desc-blk').eq(index).removeClass('changeImage');
+                });
+            }
+        }
+    });
+
+
+});
+
+
+//Scroll
   
   $(document).ready(function() {
     $('#fullpage').fullpage({
