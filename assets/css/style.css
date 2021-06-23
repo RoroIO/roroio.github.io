@@ -129,6 +129,9 @@
       font-weight: var( --fontNormal);
       padding: 0px 75px 0px 0px;    
   }
+  .down-bar{
+    position: relative;
+  }
   .down-arow{
     position: absolute;
     bottom: 54px;
@@ -1383,7 +1386,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
    }
    .down-arow {
      position: relative;
-    bottom: 65px;
+    bottom: 85px;
     margin-left: 0px;
   }
   .roro-serving-head h4 {
@@ -1632,6 +1635,7 @@ header nav ul > li {
 float: right;
 margin-right: 0;
 clear: both;
+margin-bottom: 40px;
 -webkit-transition: all .4s;
 -moz-transition: all .4s;
 -ms-transition: all .4s;
@@ -1645,7 +1649,7 @@ margin-right: 20px;
 }
 header nav ul li {
 display: inline-block;
-margin-right: 50px;
+margin-right: 5px;
 -webkit-transform: translateY(-50px);
 -ms-transform: translateY(-50px);
 -o-transform: translateY(-50px);
@@ -1678,7 +1682,10 @@ opacity: 1;
 transition: none;
 }
 
-
+header nav ul.show > li {
+  margin-right: 20px;
+  opacity: 1;
+}
 
   .b-box {
     background-image: url(../img/i-pad/landing-mob.png);
@@ -1738,7 +1745,7 @@ transition: none;
     margin-bottom: 71px;
   }
   .r-recent-box p {
-    width: 326px;
+    width: 335px;
     height: 240px;
   }
   .pp-b{
@@ -1748,8 +1755,9 @@ transition: none;
     margin-bottom: 20px!important;
   }
   .r-recent-box a {
-    font-size: 12px;
+    font-size: 12px!important;
     margin-bottom: 32px;
+    text-decoration: none;
   }
   .r-progolf-img {
     width: 217px;
