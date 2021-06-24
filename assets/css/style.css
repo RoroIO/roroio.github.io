@@ -755,6 +755,11 @@
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out; 
 }
+.tools-box embed{
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out; 
+}
 .figma-set{
   margin-top: 32px;
 }
@@ -768,6 +773,10 @@
   margin-top: 20px;
 }
 .tools-box img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+.tools-box embed:hover{
   filter: none;
   -webkit-filter: grayscale(0);
 }
@@ -819,12 +828,21 @@ a.disable-link{
   background: transparent;
   border-radius: 0px;
 }
+#email{
+  color: #fff!important;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
-  color: #fff!important;
+  /* color: #fff!important; */
   -webkit-box-shadow: 0 0 0 30px #000 inset;
+}
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+  color: #fff!important;
 }
 .get-touch-form .group label {
   position: absolute;
@@ -1542,19 +1560,13 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   }
   /*-- ==== Mobile header css ==== --*/
   header {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 99999;
-    height: 93px;
-    padding: 12px 45px;
-    background-color: #000;
-    -webkit-transition: box-shadow .75s ease-in-out;
-    -moz-transition: box-shadow .75s ease-in-out;
-    -ms-transition: box-shadow .75s ease-in-out;
-    -o-transition: box-shadow .75s ease-in-out;
-    transition: box-shadow .75s ease-in-out;
+    background: #000;
+
 }
 header .mobile-menu {
     display: none;
@@ -1963,4 +1975,9 @@ header.active-menu nav ul li {
   -o-transition: all .25s ease;
   -ms-transition: all .25s ease;
   transition: all .25s ease;
+}
+@media (max-height: 700px) {
+  .down-arow{
+    position: fixed;
+  }
 }
