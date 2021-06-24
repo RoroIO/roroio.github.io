@@ -755,11 +755,12 @@
   -webkit-filter: grayscale(1);
   -webkit-transition: all .5s ease-in-out; 
 }
-.tools-box embed{
+.tools-box object{
   filter: gray;
   -webkit-filter: grayscale(1);
-  -webkit-transition: all .5s ease-in-out; 
+  -webkit-transition: all .5s ease-in-out;
 }
+
 .figma-set{
   margin-top: 32px;
 }
@@ -776,7 +777,7 @@
   filter: none;
   -webkit-filter: grayscale(0);
 }
-.tools-box embed:hover{
+.tools-box object:hover{
   filter: none;
   -webkit-filter: grayscale(0);
 }
@@ -1532,6 +1533,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
     -webkit-filter: unset;
     -webkit-transition: all .5s ease-in-out;
   }
+  
   }
  .i-pad-hide{
    display: none!important;
