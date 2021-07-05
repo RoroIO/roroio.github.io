@@ -843,7 +843,7 @@ input:-internal-autofill-selected {
   appearance: menulist-button;
   background-color: rgb(232, 240, 254) !important;
   background-image: none !important;
-  color: #fff!important;
+  -webkit-text-fill-color: #fff;
 }
 .get-touch-form .group label {
   position: absolute;
