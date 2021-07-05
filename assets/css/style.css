@@ -1404,7 +1404,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
      margin: unset;
    }
    .down-arow {
-     position: relative;
+     position: relative!important;
     bottom: 85px;
     margin-left: 0px;
   }
@@ -1547,6 +1547,9 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
  /*-- ======================= Mobile 768px ======================== --*/
 
  @media screen and (max-width:768px) {
+   .banner{
+     margin-top: 38px;
+   }
    .mob-menu{
      display: unset;
    }
@@ -1562,7 +1565,7 @@ footer .icon-ract .ract .ract_white:nth-child(2n + 1) {
   }
   /*-- ==== Mobile header css ==== --*/
   header {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
@@ -1574,7 +1577,7 @@ header .mobile-menu {
     display: none;
     float: right;
     padding: 20px 0;
-    position: absolute;
+    position: relative;
     right: 45px;
     top: 0;
     cursor: pointer;
@@ -1585,7 +1588,7 @@ header .mobile-menu {
 }
 header {
 height: 60px;
-padding: 0 20px;
+/* padding: 0 20px; */
 }
 header .logo-img {
 width: 93px;
@@ -1605,7 +1608,7 @@ padding: 12px 10px;
 text-transform: uppercase;
 }
 header .mobile-menu {
-right: 20px;
+right: 0px;
 display: block;
 padding: 19px 0;
 }
@@ -1616,8 +1619,11 @@ height: 20px;
 header .closeBtn {
 display: none;
 float: right;
-padding: 19px 0;
+/* padding: 19px 0; */
 width: 24px;
+right: 35px;
+position: fixed;
+top: 20px;
 }
 header nav {
 display: none;
@@ -1694,6 +1700,7 @@ header nav ul.show {
 right: 0;
 opacity: 1;
 transition: none;
+z-index: 9999;
 }
 
 header nav ul.show > li {
@@ -1709,10 +1716,10 @@ header nav ul.show > li {
     }
   .inner {
     width: 316px;
-    height: 90vh;
+    height: 81vh;
   }
   .down-arow {
-    bottom: 26px;
+    bottom: 64px;
   }
   .r-banner-text h1 {
     font-size: 36px;
