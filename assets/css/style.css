@@ -43,6 +43,7 @@
     overflow:visible;
     overflow-x: hidden;
     height: 100%;
+    scroll-behavior: smooth;
   }
   .roro-container{
     width: 1200px;
