@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>kotlin</title>
+    <title>kotlin-1 (1)</title>
     <defs>
-        <polygon id="path-1" points="46 0 23.0621941 22.8973248 0 46 0 24.2876321 23.0953084 0"></polygon>
-        <linearGradient x1="-6.78603667%" y1="81.889944%" x2="59.7484083%" y2="15.354909%" id="linearGradient-3">
-            <stop stop-color="#C757BC" offset="0%"></stop>
-            <stop stop-color="#FF8900" offset="100%"></stop>
+        <linearGradient x1="-16.836%" y1="91.94%" x2="76.2192%" y2="-1.116%" id="linearGradient-1">
+            <stop stop-color="#C757BC" offset="10.8%"></stop>
+            <stop stop-color="#CD5CA9" offset="17.3%"></stop>
+            <stop stop-color="#E8744F" offset="49.2%"></stop>
+            <stop stop-color="#F88316" offset="71.6%"></stop>
+            <stop stop-color="#FF8900" offset="82.3%"></stop>
         </linearGradient>
-        <polygon id="path-4" points="23.0621941 0 46 23.102306 0 23.102306"></polygon>
-        <linearGradient x1="45.3400111%" y1="104.615965%" x2="77.2711849%" y2="72.6847913%" id="linearGradient-6">
-            <stop stop-color="#00AFFF" offset="0%"></stop>
-            <stop stop-color="#925EFF" offset="100%"></stop>
+        <linearGradient x1="31.9144%" y1="71.6723718%" x2="77.2712%" y2="48.8930983%" id="linearGradient-2">
+            <stop stop-color="#00AFFF" offset="29.6%"></stop>
+            <stop stop-color="#5282FF" offset="69.4%"></stop>
+            <stop stop-color="#945DFF" offset="100%"></stop>
         </linearGradient>
-        <polygon id="path-7" points="23.0953084 0 0 24.2876321 0 0"></polygon>
-        <linearGradient x1="8.21744439%" y1="18.1823124%" x2="30.617594%" y2="-4.21839917%" id="linearGradient-9">
-            <stop stop-color="#00AFFF" offset="0%"></stop>
-            <stop stop-color="#925EFF" offset="100%"></stop>
+        <linearGradient x1="2.6260369%" y1="52.2750345%" x2="59.9306592%" y2="-7.98951499%" id="linearGradient-3">
+            <stop stop-color="#00AFFF" offset="29.6%"></stop>
+            <stop stop-color="#5282FF" offset="69.4%"></stop>
+            <stop stop-color="#945DFF" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="kotlin">
-            <g id="Group-3">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-2"></g>
-                <polygon id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)" points="0 46 46 46 46 0 0 0"></polygon>
-            </g>
-            <g id="Group-6" transform="translate(0.000000, 22.897694)">
-                <mask id="mask-5" fill="white">
-                    <use xlink:href="#path-4"></use>
-                </mask>
-                <g id="Clip-5"></g>
-                <polygon id="Fill-4" fill="url(#linearGradient-6)" mask="url(#mask-5)" points="0 23.102306 46 23.102306 46 -22.897694 0 -22.897694"></polygon>
-            </g>
-            <g id="Group-9">
-                <mask id="mask-8" fill="white">
-                    <use xlink:href="#path-7"></use>
-                </mask>
-                <g id="Clip-8"></g>
-                <polygon id="Fill-7" fill="url(#linearGradient-9)" mask="url(#mask-8)" points="0 46 46 46 46 0 0 0"></polygon>
-            </g>
+        <g id="kotlin-1-(1)" fill-rule="nonzero">
+            <polygon id="Path" fill="url(#linearGradient-1)" points="23.095312 0 0 24.287632 0 46 23.062192 22.897328 46 0"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-2)" points="0 46 23.062192 22.897696 46 46"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-3)" points="0 0 23.095312 0 0 24.287632"></polygon>
         </g>
     </g>
 </svg>

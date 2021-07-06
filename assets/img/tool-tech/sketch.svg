@@ -1,73 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="62px" height="57px" viewBox="0 0 62 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>sketch</title>
-    <defs>
-        <polygon id="path-1" points="12.5555469 0 30.9957745 36.030722 30.9949101 36.030722 5.05284793e-16 0"></polygon>
-        <polygon id="path-3" points="30.9973109 0 0.000864323003 36.030722 0 36.030722 18.4417833 0"></polygon>
-        <polygon id="path-5" points="36.8836704 0 18.4426131 36.030722 18.4408844 36.030722 0 0"></polygon>
-        <polygon id="path-7" points="18.4418266 0 0 19.969278 0.970652019 1.84354297"></polygon>
-        <polygon id="path-9" points="0 0 17.4711832 1.84354297 18.4418438 19.969278"></polygon>
-        <polygon id="path-11" points="0 0 13.5261883 18.1257351 0.970660662 18.1257351"></polygon>
-        <polygon id="path-13" points="13.5261989 0 12.5555469 18.1257351 -2.62388246e-16 18.1257351"></polygon>
-        <polygon id="path-15" points="18.4418266 0 36.8836704 19.969278 0 19.969278"></polygon>
-    </defs>
+    <title>sketch-2 (1)</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="sketch">
-            <g id="Group-3" transform="translate(0.000000, 19.969278)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-2"></g>
-                <polygon id="Fill-1" fill="#EA6C00" mask="url(#mask-2)" points="-1.24695677 37.2774156 32.2443409 37.2774156 32.2443409 -1.24476272 -1.24695677 -1.24476272"></polygon>
+        <g id="sketch-2-(1)" fill-rule="nonzero">
+            <g id="a-link" transform="translate(0.000000, 20.325183)" fill="#EA6C00">
+                <polygon id="a" points="12.5555414 0 30.9973748 36.6748166 0 0"></polygon>
             </g>
-            <g id="Group-6" transform="translate(31.002689, 19.969278)">
-                <mask id="mask-4" fill="white">
-                    <use xlink:href="#path-3"></use>
-                </mask>
-                <g id="Clip-5"></g>
-                <polygon id="Fill-4" fill="#EA6C00" mask="url(#mask-4)" points="-1.2470193 37.2774156 32.2442697 37.2774156 32.2442697 -1.24474547 -1.2470193 -1.24474547"></polygon>
+            <g id="b-link" transform="translate(46.501313, 38.662592) scale(-1, 1) translate(-46.501313, -38.662592) translate(31.002625, 20.325183)" fill="#EA6C00">
+                <polygon id="b" points="12.5555414 0 30.9973748 36.6748166 0 0"></polygon>
             </g>
-            <g id="Group-9" transform="translate(12.554890, 19.969278)">
-                <mask id="mask-6" fill="white">
-                    <use xlink:href="#path-5"></use>
-                </mask>
-                <g id="Clip-8"></g>
-                <polygon id="Fill-7" fill="#FDAD00" mask="url(#mask-6)" points="-1.2469588 37.2774156 38.1306292 37.2774156 38.1306292 -1.24476272 -1.2469588 -1.24476272"></polygon>
+            <g id="c-link" transform="translate(12.554885, 20.325183)" fill="#FDAD00">
+                <polygon id="c" points="0 0 36.8836668 0 18.4418334 36.6748166"></polygon>
             </g>
-            <g id="Group-12" transform="translate(12.554890, 0.000000)">
-                <mask id="mask-8" fill="white">
-                    <use xlink:href="#path-7"></use>
-                </mask>
-                <g id="Clip-11"></g>
-                <polygon id="Fill-10" fill="#FDD231" mask="url(#mask-8)" points="-1.2469588 21.2140442 19.6887854 21.2140442 19.6887854 -1.24476617 -1.2469588 -1.24476617"></polygon>
+            <g id="d-link" transform="translate(12.554885, 0.000000)" fill="#FDD231">
+                <polygon id="d" points="18.4418334 0 0.970657352 1.87641698 0 20.3251834"></polygon>
             </g>
-            <g id="Group-15" transform="translate(30.996717, 0.000000)">
-                <mask id="mask-10" fill="white">
-                    <use xlink:href="#path-9"></use>
-                </mask>
-                <g id="Clip-14"></g>
-                <polygon id="Fill-13" fill="#FDD231" mask="url(#mask-10)" points="-1.2469588 21.2140442 19.688794 21.2140442 19.688794 -1.2447748 -1.2469588 -1.2447748"></polygon>
+            <g id="e-link" transform="translate(40.217635, 10.162592) scale(-1, 1) translate(-40.217635, -10.162592) translate(30.996719, 0.000000)" fill="#FDD231">
+                <polygon id="e" points="18.4418334 0 0.970657352 1.87641698 0 20.3251834"></polygon>
             </g>
-            <g id="Group-18" transform="translate(48.473812, 1.843543)">
-                <mask id="mask-12" fill="white">
-                    <use xlink:href="#path-11"></use>
-                </mask>
-                <g id="Clip-17"></g>
-                <polygon id="Fill-16" fill="#FDAD00" mask="url(#mask-12)" points="-1.2469588 19.3705013 14.7731557 19.3705013 14.7731557 -1.24475755 -1.2469588 -1.24475755"></polygon>
+            <g id="f-link" transform="translate(55.236901, 11.100800) scale(-1, 1) translate(-55.236901, -11.100800) translate(48.473801, 1.876417)" fill="#FDAD00">
+                <polygon id="f" points="0 18.4487664 13.5261988 0 12.5555414 18.4487664"></polygon>
             </g>
-            <g id="Group-21" transform="translate(0.000000, 1.843543)">
-                <mask id="mask-14" fill="white">
-                    <use xlink:href="#path-13"></use>
-                </mask>
-                <g id="Clip-20"></g>
-                <polygon id="Fill-19" fill="#FDAD00" mask="url(#mask-14)" points="-1.24695677 19.3705013 14.7731577 19.3705013 14.7731577 -1.24475755 -1.24695677 -1.24475755"></polygon>
+            <g id="g-link" transform="translate(0.000000, 1.876417)" fill="#FDAD00">
+                <polygon id="g" points="0 18.4487664 13.5261988 0 12.5555414 18.4487664"></polygon>
             </g>
-            <g id="Group-24" transform="translate(12.554890, 0.000000)">
-                <mask id="mask-16" fill="white">
-                    <use xlink:href="#path-15"></use>
-                </mask>
-                <g id="Clip-23"></g>
-                <polygon id="Fill-22" fill="#FEEEB7" mask="url(#mask-16)" points="-1.2469588 21.2140442 38.1306292 21.2140442 38.1306292 -1.24476617 -1.2469588 -1.24476617"></polygon>
+            <g id="h-link" transform="translate(12.554885, 0.000000)" fill="#FEEEB7">
+                <polygon id="h" points="18.4418334 0 0 20.3251834 36.8836668 20.3251834"></polygon>
             </g>
         </g>
     </g>

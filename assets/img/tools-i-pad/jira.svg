@@ -1,44 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="47px" height="48px" viewBox="0 0 47 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>jira</title>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jira-1 (2)</title>
     <defs>
-        <path d="M22.5364876,0 C23.6164613,0 24.4915293,0.875609644 24.4915293,1.95504179 L24.4915293,1.95504179 L24.4915293,24.3485603 C18.8780737,24.3448929 14.328475,19.7951086 14.3248076,14.1816529 L14.3248076,14.1816529 L14.3248076,10.1733294 L10.1733139,10.1733294 C4.5547439,10.1733294 0,5.61856227 0,0 L0,0 L22.5364876,0 Z" id="path-1"></path>
-        <path d="M22.5363173,0 C23.6161054,0 24.4915293,0.875609644 24.4915293,1.9553977 L24.4915293,1.9553977 L24.4915293,24.348189 C18.8780737,24.348189 14.3253492,19.801515 14.3182154,14.1880593 L14.3182154,14.1880593 L14.3182154,10.1669075 L10.1667218,10.1669075 C4.55308813,10.16324 0.00348176463,5.61345568 0,0 L0,0 L22.5363173,0 Z" id="path-3"></path>
-        <linearGradient x1="71.4558014%" y1="27.6188461%" x2="54.658544%" y2="45.1460524%" id="linearGradient-5">
-            <stop stop-color="#0052CC" offset="0%"></stop>
-            <stop stop-color="#2683FE" offset="100%"></stop>
+        <linearGradient x1="98.031%" y1="0.161%" x2="58.888%" y2="40.766%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
         </linearGradient>
-        <path d="M22.5364798,0 C23.6162911,0 24.491715,0.875423949 24.491715,1.95521201 L24.491715,1.95521201 L24.491715,24.348189 C18.8832035,24.3375578 14.3414891,19.7897884 14.3378216,14.1814672 L14.3378216,14.1814672 L14.3378216,10.1733216 L10.1733216,10.1733216 C4.55491877,10.1733216 0,5.61858548 0,0 L0,0 L22.5364798,0 Z" id="path-6"></path>
-        <linearGradient x1="48.417004%" y1="52.1008556%" x2="28.9933784%" y2="71.2112131%" id="linearGradient-8">
-            <stop stop-color="#0052CC" offset="0%"></stop>
-            <stop stop-color="#2683FE" offset="100%"></stop>
+        <linearGradient x1="100.665%" y1="0.455%" x2="55.402%" y2="44.727%" id="linearGradient-2">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-414.000000, -510.000000)">
-            <g id="jira" transform="translate(414.000000, 510.300000)">
-                <g id="Group-3" transform="translate(22.308471, 0.000000)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-2"></g>
-                    <polygon id="Fill-1" fill="#2684FF" mask="url(#mask-2)" points="-0.935998917 25.2845593 25.4275283 25.2845593 25.4275283 -0.935998917 -0.935998917 -0.935998917"></polygon>
-                </g>
-                <g id="Group-6" transform="translate(11.157624, 11.229116)">
-                    <mask id="mask-4" fill="white">
-                        <use xlink:href="#path-3"></use>
-                    </mask>
-                    <g id="Clip-5"></g>
-                    <polygon id="Fill-4" fill="url(#linearGradient-5)" mask="url(#mask-4)" points="-11.1576242 35.5708835 35.6423758 35.5708835 35.6423758 -11.2291165 -11.1576242 -11.2291165"></polygon>
-                </g>
-                <g id="Group-9" transform="translate(0.000000, 22.451811)">
-                    <mask id="mask-7" fill="white">
-                        <use xlink:href="#path-6"></use>
-                    </mask>
-                    <g id="Clip-8"></g>
-                    <polygon id="Fill-7" fill="url(#linearGradient-8)" mask="url(#mask-7)" points="0 24.348189 46.8 24.348189 46.8 -22.451811 0 -22.451811"></polygon>
-                </g>
-            </g>
+        <g id="jira-1-(2)" fill-rule="nonzero">
+            <path d="M35.4543482,0 L17.6370376,0 C17.6370376,4.44203288 21.2380168,8.04301202 25.6800497,8.04301202 L28.9622049,8.04301202 L28.9622049,11.2119895 C28.9651032,15.6499781 32.5620114,19.2470312 37,19.2499295 L37,1.5456518 C37,0.692253764 36.308181,0 35.4543482,0 Z" id="Path" fill="#2684FF"></path>
+            <path d="M26.6383654,8.87771616 L8.82119973,8.87771616 C8.82395309,13.3157048 12.4208613,16.9127579 16.8589948,16.9156562 L20.1411501,16.9156562 L20.1411501,20.0947776 C20.1468017,24.5327662 23.7461735,28.1273558 28.1841621,28.1273558 L28.1841621,10.4236578 C28.1841621,9.56996992 27.4920532,8.87771616 26.6383654,8.87771616 L26.6383654,8.87771616 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M17.8173106,17.7503603 L0,17.7503603 C0,22.1924065 3.60111075,25.7933723 8.04301202,25.7933723 L11.3354561,25.7933723 L11.3354561,28.9622049 C11.3383544,33.3961359 14.9290313,36.991595 19.3631073,37 L19.3631073,19.296157 C19.3631073,18.4424692 18.6709984,17.7503603 17.8173106,17.7503603 Z" id="Path" fill="url(#linearGradient-2)"></path>
         </g>
     </g>
 </svg>

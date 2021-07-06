@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="37px" height="55px" viewBox="0 0 37 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>figma</title>
-    <defs>
-        <path d="M18,0 L18,9 C18,13.9679989 13.9679983,18 9,18 C4.03200012,18 0,13.9679989 0,9 C0,4.03200182 4.03200012,0 9,0 L9,0 L18,0 Z" id="path-1"></path>
-        <path d="M18,0 L18,18 L9,18 C4.03200012,18 0,13.9679989 0,9 C0,4.03200182 4.03200012,0 9,0 L18,0 Z" id="path-3"></path>
-        <path d="M18,0 L18,18 L9,18 C4.03200012,18 0,13.9679989 0,9 C0,4.03200182 4.03200012,0 9,0 L18,0 Z" id="path-5"></path>
-        <path d="M9,0 C13.9679983,0 18,4.03200182 18,9 C18,13.9679989 13.9679983,18 9,18 L0,18 L0,0 L9,0 Z" id="path-7"></path>
-        <path d="M9,0 C13.9679983,0 18,4.03200182 18,9 C18,13.9679989 13.9679983,18 9,18 C4.03200167,18 0,13.9679989 0,9 C0,4.03200182 4.03200167,0 9,0 Z" id="path-9"></path>
-    </defs>
+<svg width="29px" height="44px" viewBox="0 0 29 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>figma-1 (1)</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-1106.000000, -65.000000)">
-            <g id="figma" transform="translate(1106.100000, 65.700000)">
-                <g id="Group-3" transform="translate(0.000000, 36.000001)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-2"></g>
-                    <polygon id="Fill-1" fill="#0ACF83" mask="url(#mask-2)" points="-0.53989199 18.5398907 18.5398883 18.5398907 18.5398883 -0.539890311 -0.53989199 -0.539890311"></polygon>
-                </g>
-                <g id="Group-6" transform="translate(0.000000, 18.000001)">
-                    <mask id="mask-4" fill="white">
-                        <use xlink:href="#path-3"></use>
-                    </mask>
-                    <g id="Clip-5"></g>
-                    <polygon id="Fill-4" fill="#A259FF" mask="url(#mask-4)" points="-0.53989199 18.5398908 18.5398883 18.5398908 18.5398883 -0.539890157 -0.53989199 -0.539890157"></polygon>
-                </g>
-                <g id="Group-9">
-                    <mask id="mask-6" fill="white">
-                        <use xlink:href="#path-5"></use>
-                    </mask>
-                    <g id="Clip-8"></g>
-                    <polygon id="Fill-7" fill="#F24E1E" mask="url(#mask-6)" points="-0.53989199 18.5398908 18.5398883 18.5398908 18.5398883 -0.539890157 -0.53989199 -0.539890157"></polygon>
-                </g>
-                <g id="Group-12" transform="translate(18.000000, 0.000000)">
-                    <mask id="mask-8" fill="white">
-                        <use xlink:href="#path-7"></use>
-                    </mask>
-                    <g id="Clip-11"></g>
-                    <polygon id="Fill-10" fill="#FF7262" mask="url(#mask-8)" points="-0.539890137 18.5398908 18.5398901 18.5398908 18.5398901 -0.539890157 -0.539890137 -0.539890157"></polygon>
-                </g>
-                <g id="Group-15" transform="translate(18.000000, 18.000001)">
-                    <mask id="mask-10" fill="white">
-                        <use xlink:href="#path-9"></use>
-                    </mask>
-                    <g id="Clip-14"></g>
-                    <polygon id="Fill-13" fill="#1ABCFE" mask="url(#mask-10)" points="-0.539890137 18.5398908 18.5398901 18.5398908 18.5398901 -0.539890157 -0.539890137 -0.539890157"></polygon>
-                </g>
-            </g>
+        <g id="figma-1-(1)" fill-rule="nonzero">
+            <path d="M7.25,44 C11.252,44 14.5,40.7146667 14.5,36.6666667 L14.5,29.3333333 L7.25,29.3333333 C3.248,29.3333333 0,32.6186667 0,36.6666667 C0,40.7146667 3.248,44 7.25,44 Z" id="Path" fill="#0ACF83"></path>
+            <path d="M0,22 C0,17.952 3.248,14.6666667 7.25,14.6666667 L14.5,14.6666667 L14.5,29.3333333 L7.25,29.3333333 C3.248,29.3333333 0,26.048 0,22 Z" id="Path" fill="#A259FF"></path>
+            <path d="M0,7.33333333 C0,3.28533333 3.248,0 7.25,0 L14.5,0 L14.5,14.6666667 L7.25,14.6666667 C3.248,14.6666667 0,11.3813333 0,7.33333333 Z" id="Path" fill="#F24E1E"></path>
+            <path d="M14.5,0 L21.75,0 C25.752,0 29,3.28533333 29,7.33333333 C29,11.3813333 25.752,14.6666667 21.75,14.6666667 L14.5,14.6666667 L14.5,0 Z" id="Path" fill="#FF7262"></path>
+            <path d="M29,22 C29,26.048 25.752,29.3333333 21.75,29.3333333 C17.748,29.3333333 14.5,26.048 14.5,22 C14.5,17.952 17.748,14.6666667 21.75,14.6666667 C25.752,14.6666667 29,17.952 29,22 Z" id="Path" fill="#1ABCFE"></path>
         </g>
     </g>
 </svg>
