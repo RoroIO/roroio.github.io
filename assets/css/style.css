@@ -1063,7 +1063,7 @@ color: #B3B3B3;
   position: relative;
   padding-bottom: 2px;
   text-decoration: none;
-  cursor: copy;
+  cursor: pointer;
   color: #fff;
   transition: background-color calc(var(--duration) * 2) var(--ease);
 }
